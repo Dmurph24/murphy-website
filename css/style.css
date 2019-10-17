@@ -306,7 +306,7 @@ button:focus {
 }
 
 .home_banner_area .banner_inner .overlay {
-  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+  background: url("../img/Header01.jpg") no-repeat scroll center center;
   position: absolute;
   left: 0;
   right: 0;
@@ -317,7 +317,7 @@ button:focus {
 }
 
 .home_banner_area .banner_inner .banner_content {
-  background: #000;
+  background: #000000AA;
   max-width: 555px;
   margin: auto;
   padding: 45px 60px;
@@ -355,7 +355,7 @@ button:focus {
 }
 
 .blog_banner .banner_inner .overlay {
-  background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+  background: url(../img/Header01.jpg) no-repeat scroll center center;
   opacity: .5;
 }
 
@@ -393,7 +393,7 @@ button:focus {
 }
 
 .banner_area .banner_inner .overlay {
-  background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+  background: url(../img/Header01.jpg) no-repeat scroll center center;
   position: absolute;
   left: 0;
   right: 0;
