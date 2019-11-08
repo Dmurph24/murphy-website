@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/animate-css/animate.css">
         <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/BeerSlider.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
@@ -59,7 +60,26 @@
 				</div>
             </div>
         </section>
-        <!--================End Home Banner Area =================-->
+		<!--================End Home Banner Area =================-->
+		
+		<section class="before-after">
+			<div class="container p_120">
+				<div class="d-flex align-items-center">
+					<div class="p_16">
+						<h2>A Look Before and After</h2>
+						<p>Fancy tech blah blah... its awesome .. please pay me money etc...</p>
+						<p>The image is huge here, youll need resized images if you want to shrink this</p>
+					</div>
+					<div id="slider" class="beer-slider" data-beer-label="before">
+						<img src="img/Image01b.jpg" alt="">
+						<div class="beer-reveal" data-beer-label="after">
+							<img src="img/Image01c.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
         <!--================Home Gallery Area =================-->
         <section class="home_gallery_area p_120">
@@ -241,6 +261,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="js/BeerSlider.js"></script>
+        <script>
+          new BeerSlider(document.getElementById('slider'));
+        </script>
+        <script>
+          $.fn.BeerSlider = function ( options ) {
+            options = options || {};
+            return this.each(function() {
+              new BeerSlider(this, options);
+            });
+          };
+          $('.beer-slider').each( (function( index, el ) {
+            $(el).BeerSlider({start: $(el).data('beer-start')})
+          }));
+        </script>
     </body>
 </html>
