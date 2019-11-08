@@ -98,6 +98,10 @@ button:focus {
   padding-bottom: 120px;
 }
 
+.p_16 {
+  padding: 16px;
+}
+
 .mt-25 {
   margin-top: 25px;
 }
@@ -290,6 +294,10 @@ button:focus {
 
 .header_area .navbar .search i {
   font-weight: 600;
+}
+
+.before-after {
+  background-color: #e4e4e4;
 }
 
 /*---------------------------------------------------- */
